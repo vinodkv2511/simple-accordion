@@ -1,0 +1,42 @@
+.wal_acc_exp_container {
+    width: 100%;
+    font-size: 14px;
+    margin:auto;
+}
+.wal_acc_exp_header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 10px 10px 10px 15px;
+    border-top: 1px solid #bfbfc1;
+    border-bottom: 1px solid #bfbfc1
+}
+.wal_acc_exp_header > i{
+    margin: auto 15px auto 0px;
+
+}
+.wal_acc_exp_header > p{
+    margin: 0px;
+}
+
+.wal_acc_exp_body{
+    width: 100%;
+    padding: 20px 25px;
+    max-height: 300px;
+    overflow-y: hidden;
+    transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+}
+
+.wal_acc_exp_body.collapsed{
+    max-height: 0px !important;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.wal_acc_exp_body > p{
+    margin: 0px;
+    text-align: left;
+
+}
