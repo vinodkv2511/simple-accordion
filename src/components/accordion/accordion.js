@@ -7,9 +7,6 @@ import './accordion.css'
 /**
  * This is a simple Accordion component
  * Depends on Expandable
- * 
- * Works best when all items have similar height and contentHeight Prop is set - Will be fixed in future versions
- * Default content height is set to 300px
  *
  * @class Accordion
  * @extends {React.Component}
@@ -60,7 +57,6 @@ class Accordion extends React.Component{
             key={index} data={dataObj} 
             toggleHandler={()=> this.togHandler(index) } 
             collapsed={this.state.collapsed[index]}
-            contentHeight={this.props.contentHeight}
              />
         })
     }
@@ -81,8 +77,7 @@ Accordion.propTypes = {
         body: PropTypes.string.isRequired
     })).isRequired,
     defaultOpenIndex: PropTypes.number,
-    allowMultiple: PropTypes.bool,
-    contentHeight: PropTypes.string
+    allowMultiple: PropTypes.bool
 }
 
 export default Accordion;
